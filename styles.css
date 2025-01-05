@@ -1,0 +1,127 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* --------------------(Reset)------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Blue: hsl(228, 45%, 44%);
+}
+
+/* --------------------(Body)------------------------*/
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--Dark-cyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+/* --------------------(Card)------------------------*/
+
+.card-container {
+  margin: 170px auto 50px;
+  width: 350px;
+  height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-photo {
+  background: url(./images/bg-pattern-card.svg);
+  height: 140px;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 87px;
+  left: 35%;
+  border: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 96px;
+}
+
+.profile-info {
+  background-color: white;
+  height: 150px;
+  padding: 75px;
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.age,
+.city {
+  color: var(--Dark-gray);
+}
+
+.city {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.stats-container {
+  background-color: white;
+  border-top: 1px solid var(--Dark-gray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.statistics {
+  text-align: center;
+}
+
+.quantity {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.description {
+  font-size: 0.6em;
+  color: var(--Dark-gray);
+  letter-spacing: 2px;
+}
+
+/* --------------------(Footer)------------------------*/
+footer a {
+  text-decoration: none;
+}
+
+.attribution {
+  color: white;
+  font-size: 0.80rem;
+  text-align: center;
+}
+.attribution a {
+  font-weight: bold;
+  color: var(--Blue);
+}
+
+/* --------------------(Screen < 1440px)------------------------*/
+@media only screen and (max-width: 1440px) {
+  .card-container {
+    width: 350;
+  }
+}
